@@ -9,29 +9,22 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"  rel="stylesheet" />
 </head>
 <body>
-    <div>Всем привет</div>
-    <div>Версия PHP: <?php print phpversion(); ?></div>
-
-    <pre>
-    <?php print_r($_SERVER["REQUEST_URI"]) ?>
-    </pre>
-
     <nav class="navbar navbar-expand-lg bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#"><i class="fas fa-meteor"></i></a>
+    <a class="navbar-brand" href="/"><i class="fas fa-meteor"></i></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href=".../views/main.php">Главная</a>
+          <a class="nav-link active" aria-current="page" href="/">Главная</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href=".../views/AcanthocalciumPurple">Акантокалициум фиолетовый</a>
+          <a class="nav-link" href="AcanthocalciumPurple">Акантокалициум фиолетовый</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href=".../views/AporocactusWattleShaped">Апорокактус плетевидный</a>
+          <a class="nav-link" href="AporocactusWattleShaped">Апорокактус плетевидный</a>
         </li>
         
         <!--
@@ -49,14 +42,14 @@
     <?php 
     $url = $_SERVER["REQUEST_URI"];
 
-    echo "Вы на странице: $url, будьте внимательны!<br>";
+    echo "Вы на странице: $url, будьте внимательны!<br> \n";
 
     if ($url == "/") {
-        require "views/main.php";
-    } elseif ($url == "/andromeda") {
-        require "views/andromeda.php";
-    } elseif ($url == "/orion") {
-        require "views/orion.php";
+        require "../views/main.php";
+    } elseif ($url == "/AcanthocalciumPurple") {
+        require "../views/AcanthocalciumPurple.php";
+    } elseif ($url == "/AporocactusWattleShaped") {
+        require "../views/AporocactusWattleShaped.php";
     } 
     ?>
 </div>
