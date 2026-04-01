@@ -1,49 +1,29 @@
 Апорокактус плетевидный = AporocactusWattleShaped
 
-<style>
-       
-        .plant-gallery {
-            display: flex;           
-            gap: 15px;              
-            border: 5px solid #79a177; 
-            background-color: #d0e7cf;
-            padding: 15px;          
-            width: 100%;     
-            border-radius: 8px;
-            
-            flex-wrap: wrap;
-            box-sizing: border-box;
-        }
-        
-        
-        .plant-gallery img {
-            border: 5px solid #173516;
-            max-height: 350px;
-            display: block;
-            max-width: 100%;  
-            height: auto;     
-            width: auto;           
-        }
-
-        .textGallery {
-            text-align: center;
-            max-width: 350px;  
-            flex-shrink: 1;    
-            min-width: 150px; 
-        }
-        
-    </style>
 
 <div class="plant-gallery">
-    <div class="textGallery">
+    <div class="textGalleryCenter">
         <img src="/images/AporocactusWattleShapedIJpeg.jpg" alt="Фотография цветка">
         <div>Цветок</div>
     </div>
 
-    <div class="textGallery">
+    <div class="textGalleryCenter">
         <img src="/images/AporocactusWattleShapedJPEG2.jpg" alt="Фотография стеблей">
         <div>Стебли</div>
     </div>
+
+        <div class="textGallery">
+
+        <div>Апорокактус плетевидный (лат. Aporocactus flagelliformis) — вид кактусов из рода Апорокактус. В литературе на русском языке встречается также под названием Дизокактус плетевидный, соответствующим наименованию Disocactus flagelliformis, которое входит в синонимику вида.
+
+<br>Описание <br>
+Стебли зелёные, до 2 м длиной и 0,8—1,5 см в диаметре. Рёбра (8—13) невысокие. Радиальные колючки (8—12) от жёлтых до красно-коричневых, тонкие, щетинковидные, 0,5 см длиной. Центральные колючки (3—4) мало отличаются от радиальных.
+
+
+Свисающие стебли
+Цветки ярких малиново-карминных тонов, 7—9 см длиной, появляются в большом количестве на боковой поверхности побегов. Плоды около 1 см в диаметре, содержат бледно-жёлтую мякоть.
+</div>
+</div>
 
 </div>
 
