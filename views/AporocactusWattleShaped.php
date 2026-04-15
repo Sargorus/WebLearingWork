@@ -1,29 +1,23 @@
 Апорокактус плетевидный = AporocactusWattleShaped
 
+<?php
+    $is_image = $url == '/AporocactusWattleShaped/Images';
+    $is_info = $url == '/AporocactusWattleShaped/Info'
+?>
 
-<div class="plant-gallery">
-    <div class="textGalleryCenter">
-        <img src="/images/AporocactusWattleShapedIJpeg.jpg" alt="Фотография цветка">
-        <div>Цветок</div>
-    </div>
+<h1>Апорокактус плетевидный</h1>
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link <?= $is_image ? "active" : '' ?>" href="/AporocactusWattleShaped/Images">
+        Картинка
+    </a>
+  </li>
+      <a class="nav-link <?= $is_info ? "active" : '' ?>" href="/AporocactusWattleShaped/Info">
+        Информация
+    </a>
+</ul>
 
-    <div class="textGalleryCenter">
-        <img src="/images/AporocactusWattleShapedJPEG2.jpg" alt="Фотография стеблей">
-        <div>Стебли</div>
-    </div>
-
-        <div class="textGallery">
-
-        <div>Апорокактус плетевидный (лат. Aporocactus flagelliformis) — вид кактусов из рода Апорокактус. В литературе на русском языке встречается также под названием Дизокактус плетевидный, соответствующим наименованию Disocactus flagelliformis, которое входит в синонимику вида.
-
-<br>Описание <br>
-Стебли зелёные, до 2 м длиной и 0,8—1,5 см в диаметре. Рёбра (8—13) невысокие. Радиальные колючки (8—12) от жёлтых до красно-коричневых, тонкие, щетинковидные, 0,5 см длиной. Центральные колючки (3—4) мало отличаются от радиальных.
-
-
-Свисающие стебли
-Цветки ярких малиново-карминных тонов, 7—9 см длиной, появляются в большом количестве на боковой поверхности побегов. Плоды около 1 см в диаметре, содержат бледно-жёлтую мякоть.
-</div>
-</div>
-
-</div>
+<?php if ($is_image): require __DIR__ . "/../views/AporocactusWattleShapedImages.php";?>
+<?php elseif ($is_info): require __DIR__ . "/../views/AporocactusWattleShapedInfo.php";?>
+<?php endif; ?>
 
